@@ -30,7 +30,7 @@ const App = () => {
     //   .post('http://localhost:5000/buscar', { municipios_mostrar: municipiosMostrar })
     // setMapaSeleccionado('buscar'); // Cambiar al mapa de búsqueda después de recibir la respuesta del servidor
     await axios
-      .post('http://localhost:5000/ruta', { municipios_mostrar: resultado })
+      .post('http://127.0.0.1:5000/ruta', { municipios_mostrar: resultado })
     
   };
 
