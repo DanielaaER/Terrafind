@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_66d9567ae037fb3e08436631aa41a7c1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_66d9567ae037fb3e08436631aa41a7c1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_66d9567ae037fb3e08436631aa41a7c1 = L.map(
+                "map_66d9567ae037fb3e08436631aa41a7c1",
+                {
+                    center: [23.626672, -102.537292],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    dragging: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_561515fa51064b9f2e8a199084640446 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_66d9567ae037fb3e08436631aa41a7c1);
+        
+    
+            var marker_3a3fa52ee5cb6600687b120375938993 = L.marker(
+                [19.190323, -96.153028],
+                {}
+            ).addTo(map_66d9567ae037fb3e08436631aa41a7c1);
+        
+    
+            marker_3a3fa52ee5cb6600687b120375938993.bindTooltip(
+                `<div>
+                     Veracruz de Ignacio de la Llave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d83f44bae3129c9ffae401598425ad77 = L.marker(
+                [19.10494, -97.952715],
+                {}
+            ).addTo(map_66d9567ae037fb3e08436631aa41a7c1);
+        
+    
+            marker_d83f44bae3129c9ffae401598425ad77.bindTooltip(
+                `<div>
+                     Puebla
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4bc2c0709d38176a74f00e440c14d9ce = L.marker(
+                [19.956229, -99.844032],
+                {}
+            ).addTo(map_66d9567ae037fb3e08436631aa41a7c1);
+        
+    
+            marker_4bc2c0709d38176a74f00e440c14d9ce.bindTooltip(
+                `<div>
+                     México
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f9fb458ba1136e8e6d4b7c4b3275f1f = L.marker(
+                [19.496252, -101.332851],
+                {}
+            ).addTo(map_66d9567ae037fb3e08436631aa41a7c1);
+        
+    
+            marker_0f9fb458ba1136e8e6d4b7c4b3275f1f.bindTooltip(
+                `<div>
+                     Michoacán de Ocampo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f33882c4275d59d0e39861f45bf2be6 = L.marker(
+                [20.779444, -102.905278],
+                {}
+            ).addTo(map_66d9567ae037fb3e08436631aa41a7c1);
+        
+    
+            marker_0f33882c4275d59d0e39861f45bf2be6.bindTooltip(
+                `<div>
+                     Jalisco
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c537cbee2b68f0cb23c964649455107c = L.polyline(
+                [[19.190323, -96.153028], [19.10494, -97.952715], [19.956229, -99.844032], [19.496252, -101.332851], [20.779444, -102.905278]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_66d9567ae037fb3e08436631aa41a7c1);
+        
+</script>
+</html>
